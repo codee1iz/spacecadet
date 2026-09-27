@@ -8,4 +8,4 @@
 - [Вектор 5](solution/Vector_5/README.md)
 - [Вектор 6](solution/Vector_6/README.md)
 
--- [presentation](solution/presentation/README.md)
+- [presentation](solution/presentation/README.md)
