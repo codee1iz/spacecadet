@@ -424,8 +424,8 @@ picotool load -x any_pass.bin -t bin -o 0x10000000
 </table>
 
 > [!IMPORTANT]
-> - Прошивка без пароля - [тык-тык](./solutions/patching_src/no_pass.bin)
-> - Прошивка, принимающая любой пароль - [тык-тык](./solutions/patching_src/any_pass.bin)
+> - Прошивка без пароля - [тык-тык](./patching_src/no_pass.bin)
+> - Прошивка, принимающая любой пароль - [тык-тык](./patching_src/any_pass.bin)
 
 </details>
 <br>
@@ -592,9 +592,9 @@ picotool load -x any_pass.bin -t bin -o 0x10000000
 </table>
 
 > [!IMPORTANT]
-> - Исходная прошивка - [тык-тык](./solutions/cryptoanalys_src/firmware.bin)
-> - Расшифрованный образ хранилища - [тык-тык](./solutions/cryptoanalys_src/firmware_decryprt.zip)
-> - Скрипт для расшифровки хранилища - [тык-тык](./solutions/cryptoanalys_src/decrypt.py)
+> - Исходная прошивка - [тык-тык](./cryptoanalys_src/firmware.bin)
+> - Расшифрованный образ хранилища - [тык-тык](./cryptoanalys_src/firmware_decryprt.zip)
+> - Скрипт для расшифровки хранилища - [тык-тык](./cryptoanalys_src/decrypt.py)
 
 </details>
 <br>
