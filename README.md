@@ -1085,12 +1085,80 @@ CF E0          B       loc_10000E18
 </div>
 
 </details>
-<br>
+<br><br>
 
 <div align="center">
   <h1 id="results">ИТОГИ</h1>
 </div>
 
-<p align="center">
-  <img src="./contents/presentation/Slide_16.svg" width="100%" />
-</p>
+<table>
+  <tr>
+    <td width="50%" valign="center">
+      <table>
+        <thead>
+          <tr>
+            <th align="center">№</th>
+            <th align="center">Направление</th>
+            <th align="center">Тип</th>
+            <th align="center">Сложность</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center">1</td>
+            <td align="center"><a href="#21-извлечение-пароля">Извлечение пароля</a></td>
+            <td align="center"><code>Software / Reverse Engineering</code></td>
+            <td align="center">🟢 Низкая</td>
+          </tr>
+          <tr>
+            <td align="center">2</td>
+            <td align="center"><a href="#22-модификация-прошивки">Модификация прошивки</a></td>
+            <td align="center"><code>Software / Firmware</code></td>
+            <td align="center">🟢 Низкая</td>
+          </tr>
+          <tr>
+            <td align="center">3</td>
+            <td align="center"><a href="#23-криптоанализ-хранилища">Криптоанализ хранилища</a></td>
+            <td align="center"><code>Software / Cryptanalysis</code></td>
+            <td align="center">🟡 Средняя</td>
+          </tr>
+          <tr>
+            <td align="center">4</td>
+            <td align="center"><a href="#24-эмуляция-функций-прошивки">Эмуляция функций прошивки</a></td>
+            <td align="center"><code>Software / Emulation</code></td>
+            <td align="center">🔴 Высокая</td>
+          </tr>
+          <tr>
+            <td align="center">5</td>
+            <td align="center"><a href="#25-аппаратный-перебор">Аппаратный перебор</a></td>
+            <td align="center"><code>Hardware</code></td>
+            <td align="center">🔴 Высокая</td>
+          </tr>
+          <tr>
+            <td align="center">6</td>
+            <td align="center"><a href="#26-voltage-fault-injection">Voltage fault injection</a></td>
+            <td align="center"><code>Hardware / Fault Injection</code></td>
+            <td align="center">🔴 Высокая</td>
+          </tr>
+          <tr>
+            <td align="center">7</td>
+            <td align="center"><a href="#27-side-channel-атака">Side-Channel атака</a></td>
+            <td align="center"><code>Hardware / Side-Channel</code></td>
+            <td align="center">🔴 Высокая</td>
+          </tr>
+          <tr>
+            <td align="center">8</td>
+            <td align="center"><a href="#28-выпаивание-чипа-памяти">Выпаивание чипа памяти</a></td>
+            <td align="center"><code>Hardware / Physical (Invasive)</code></td>
+            <td align="center">🔴 Высокая</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+    <td width="50%" valign="center">
+      <p align="center">
+        <img src="./contents/presentation/Slide_16.svg" width="85%">
+      </p>
+    </td>
+  </tr>
+</table>
