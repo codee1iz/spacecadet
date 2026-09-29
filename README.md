@@ -1091,7 +1091,7 @@ CF E0          B       loc_10000E18
   <h1 id="results">ИТОГИ</h1>
 </div>
 
-<p align="center">
+<div align="center">
   <table>
     <thead>
       <tr>
@@ -1152,7 +1152,7 @@ CF E0          B       loc_10000E18
       </tr>
     </tbody>
   </table>
-</p>
+</div>
 <br><br>
 
 <p align="center">
