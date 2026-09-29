@@ -735,9 +735,9 @@ picotool load -x any_pass.bin -t bin -o 0x10000000
 </table>
 
 > [!IMPORTANT]
-> Эмулирование прошивки - [тык-тык](./emulatio_src).
+> Эмулирование прошивки - [тык-тык](./emulation_src).
 > 
-> Для запуска необходимо создать виртуальное окружение, установить необходимые [зависимости](./requirements.txt) и запустить [main.py](./emulatio_src/main.py).
+> Для запуска необходимо создать виртуальное окружение, установить необходимые [зависимости](./requirements.txt) и запустить [main.py](./emulation_src/main.py).
 
 </details>
 <br>
