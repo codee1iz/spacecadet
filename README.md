@@ -23,7 +23,7 @@
   <a href="#summary-solutions">Краткое описание решения</a>
 </p>
 <p align="center">
-  <b><a href="#solutions">SOLUTIONS</a></b>
+  <b><a href="#solutions">РЕШЕНИЕ</a></b>
 </p>
 <p align="center">
   <b><a href="#1-дамп-прошивки-и-статический-анализ">1. Подготовительный этап:</a></b>
@@ -67,8 +67,9 @@
 <br>
 
 <div align="center">
-  <h1 id="solutions">SOLUTIONS</h1>
+  <h1 id="solutions">РЕШЕНИЕ</h1>
 </div>
+<br>
 
 ## **1. Подготовительный этап**
 ### **1.1. Дамп памяти**
