@@ -1093,7 +1093,7 @@ CF E0          B       loc_10000E18
 
 <table>
   <tr>
-    <td width="45%" valign="center">
+    <td width="30%" valign="center">
       <table>
         <thead>
           <tr>
@@ -1157,7 +1157,7 @@ CF E0          B       loc_10000E18
     </td>
     <td width="45%" valign="center">
       <p align="center">
-        <img src="./contents/presentation/Slide_16.svg" width="85%">
+        <img src="./contents/presentation/Slide_16.svg" width="80%">
       </p>
     </td>
   </tr>
