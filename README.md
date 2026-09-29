@@ -38,10 +38,13 @@
   <a href="#22-модификация-прошивки">Модификация прошивки</a> &nbsp;•&nbsp;
   <a href="#23-криптоанализ-хранилища">Криптоанализ хранилища</a> &nbsp;•&nbsp;
   <a href="#24-эмуляция-функций-прошивки">Эмуляция функций прошивки</a> &nbsp;•&nbsp;
-  <a href="#25-аппратный-перебор-и-timing-атака">Аппаратный перебор и timing-атака</a> &nbsp;•&nbsp;
+  <a href="#25-аппаратный-перебор">Аппаратный перебор</a> &nbsp;•&nbsp;
   <a href="#26-voltage-fault-injection">Voltage fault injection</a> &nbsp;•&nbsp;
   <a href="#27-side-channel-атака">Side-Channel атака</a> &nbsp;•&nbsp;
   <a href="#28-выпаивание-чипа-памяти">Выпаивание чипа памяти</a>
+</p>
+<p align="center">
+  <b><a href="#results">ИТОГИ</a></b>
 </p>
 <br><br>
 
@@ -767,7 +770,7 @@ CF E0          B       loc_10000E18
 </details>
 <br>
 
-### **2.5. Аппаратный перебор и timing-атака**
+### **2.5. Аппаратный перебор**
 
 <p align="center">
   <img src="./contents/presentation/Slide_12.svg" width="85%" />
@@ -966,3 +969,128 @@ CF E0          B       loc_10000E18
 
 ### **2.8. Выпаивание чипа памяти**
 
+<p align="center">
+  <img src="./contents/presentation/Slide_15.svg" width="85%" />
+</p>
+
+<details>
+<summary>Нажмите, чтобы развернуть</summary>
+<br>
+
+<table>
+  <tr>
+    <td width="50%" valign="center">
+      <h1 align="center">Цель</h1>
+        <p>Получение полного бинарного дампа энергонезависимой памяти (SPI Flash) аппаратного токена CyberSafe для последующего статического анализа и реверс-инжиниринга.</p>
+    </td>
+    <td width="50%" valign="center">
+      <h3 align="center">Оборудование</h3>
+        <ui>
+          <li><b>Программатор:</b> CH341A с выполненной аппаратной доработкой (3.3V мод по логическим линиям для предотвращения повреждения SPI Flash).</li>
+          <li><b>Паяльное оборудование:</b> термовоздушная паяльная станция (ТВПС), пинцет.</li>
+          <li><b>Расходные материалы:</b> флюс для пайки SMD/BGA, полиимидный термоскотч (Kapton tape).</li>
+          <li><b>Адаптер:</b> переходная плата / сокетка под корпус USON8.</li>
+        </ui>
+      <h3 align="center">Программное обеспечение</h3>
+        <ui>
+          <li><b>NeoProgrammer:</b> для работы с программатором CH341A.</li>
+        </ui>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+<table>
+  <tr>
+    <td width="50%" valign="center">
+      <h1 align="center">Подготовка платы и термозащита</h1>
+        <ol>
+          <li>Плата CyberSafe была зафиксирована на рабочем столе.</li>
+          <li>Для предотвращения сдува и перегрева обвязки микроконтроллера RP2040 и пассивных компонентов вся плата, за исключением микросхемы SPI Flash в корпусе USON8, была заклеена полиимидным термоскотчем.</li>
+          <li>На выводы микросхемы памяти нанесен флюс.</li>
+        </ol>
+    </td>
+    <td width="50%" valign="center">
+        <p align="center">
+          <img src="./contents/media/cheap_off/plane.jpg" width="45%">
+        </p>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="50%" valign="center">
+      <h1 align="center">Демонтаж микросхемы памяти</h1>
+        <ol>
+          <li>Термовоздушной паяльной станцией произведен аккуратный и равномерный прогрев области чипа памяти.</li>
+          <li>После расплавления припоя микросхема снята с контактных площадок платы с помощью пинцета.</li>
+          <li>Контактные площадки чипа (и при необходимости самой платы) очищены от остатков флюса.</li>
+        </ol>
+    </td>
+    <td width="50%" valign="center">
+        <p align="center">
+          <img src="./contents/media/cheap_off/cheap.jpg" width="45%">
+        </p>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="50%" valign="center">
+      <h1 align="center">Подключение к программатору</h1>
+        <ol>
+          <li>Демонтированный чип USON8 выровнен и аккуратно впаян на переходную плату (или установлен в сокетку USON8).</li>
+          <li>Переходник с чипом установлен в ZIF-панель программатора CH341A.</li>
+          <li>Программатор подключен к ПК.</li>
+        </ol>
+    </td>
+    <td width="50%" valign="center">
+        <p align="center">
+          <img src="./contents/media/cheap_off/prog2.jpg" width="45%">
+        </p>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="50%" valign="center">
+      <h1 align="center">Считывание и верификация дампа</h1>
+        <ol>
+          <li>В интерфейсе <b>NeoProgrammer</b> вручную указана маркировка/наименование целевой микросхемы SPI Flash.</li>
+          <li>Выполнена процедура считывания содержимого памяти.</li>
+          <li><b>Проверка целостности (Verification):</b> для исключения сбоев чтения, ненадежного контакта выводов или ошибок передачи данных, чтение было выполнено <b>3 раза подряд</b> в отдельные файлы.</li>
+          <li>Проведено сравнение контрольных сумм полученных дампов (<code>MD5</code> / <code>SHA-256</code>). Совпадение хэшей подтвердило стабильность чтения и валидность вычитанной прошивки.</li>
+        </ol>
+    </td>
+    <td width="50%" valign="center">
+        <p align="center">
+          <img src="./contents/media/cheap_off/all_plane.jpg" width="45%">
+        </p>
+    </td>
+  </tr>
+</table>
+
+<div align="center">
+  <table width="50%">
+    <tr>
+      <td>
+        <h1 align="center">Итог</h1>
+        <p>В результате процедур получен валидный бинарный дамп прошивки устройства CyberSafe (<code>cybersafe_flash_dump.bin</code>). Чип памяти сохранен и готов к дальнейшему анализу структуры файловой системы и бинарного кода RP2040.</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+</details>
+<br>
+
+<div align="center">
+  <h1 id="results">ИТОГИ</h1>
+</div>
+
+<p align="center">
+  <img src="./contents/presentation/Slide_16.svg" width="100%" />
+</p>
