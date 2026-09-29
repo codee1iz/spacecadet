@@ -5,7 +5,7 @@
     </td>
     <td width="80%" valign="center">
       <div align="center">
-        <b><h1>SPACE CADET</h1></b>
+        <h1>SPACE CADET</h1>
         <p>Команда <b>SPACE CADET</b> - постоянный участник и призер хакатонов и CTF-соревнований, финалист ЛЦТ-2025.</p>
         <p>ВКА им. А.Ф.Можайского.</p>
         <p>г. Санкт-Петербуг.</p>
@@ -16,14 +16,14 @@
 <br><br>
 
 <div align="center">
-  <b><h1>Table of Contents</h1></b>
+  <h1>Table of Contents</h1>
 </div>
 <p align="center">
-  <a href="#о-команде">О команде</a> &nbsp;•&nbsp;
-  <a href="#краткое-описание-решения">Краткое описание решения</a>
+  <a href="#about-team">О команде</a> &nbsp;•&nbsp;
+  <a href="#summary-solutions">Краткое описание решения</a>
 </p>
 <p align="center">
-  <b><a href="#ход-решения">SOLUTIONS</a></b>
+  <b><a href="#solutions">SOLUTIONS</a></b>
 </p>
 <p align="center">
   <b><a href="#1-дамп-прошивки-и-статический-анализ">1. Подготовительный этап:</a></b>
@@ -45,7 +45,9 @@
 <br><br>
 
 
-# **О команде**
+<div align="center">
+  <h1 id="about-team">О команде</h1>
+</div>
 
 <p align="center">
   <img src="./contents/presentation/Slide_1.svg" width="45%" />
@@ -55,14 +57,18 @@
 </p>
 <br>
 
-# **Краткое описание решения**
+<div align="center">
+  <h1 id="summary-solutions">Краткое описание решения</h1>
+</div>
 
 <p align="center">
   <img src="./contents/presentation/Slide_5.svg" width="85%" />
 </p>
 <br>
 
-# **SOLUTIONS**
+<div align="center">
+  <h1 id="solutions">SOLUTIONS</h1>
+</div>
 
 ## **1. Подготовительный этап**
 ### **1.1. Дамп памяти**
