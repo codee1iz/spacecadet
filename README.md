@@ -1012,7 +1012,7 @@ CF E0          B       loc_10000E18
     </td>
     <td width="50%" valign="center">
         <p align="center">
-          <img src="./contents/media/cheap_off/plane.jpg" width="45%">
+          <img src="./contents/media/cheap_off/plane_1.jpg" width="45%">
         </p>
     </td>
   </tr>
@@ -1030,7 +1030,7 @@ CF E0          B       loc_10000E18
     </td>
     <td width="50%" valign="center">
         <p align="center">
-          <img src="./contents/media/cheap_off/cheap.jpg" width="45%">
+          <img src="./contents/media/cheap_off/cheap_1.jpg" width="45%">
         </p>
     </td>
   </tr>
@@ -1048,7 +1048,7 @@ CF E0          B       loc_10000E18
     </td>
     <td width="50%" valign="center">
         <p align="center">
-          <img src="./contents/media/cheap_off/prog2.jpg" width="45%">
+          <img src="./contents/media/cheap_off/prog2_1.jpg" width="45%">
         </p>
     </td>
   </tr>
@@ -1067,7 +1067,7 @@ CF E0          B       loc_10000E18
     </td>
     <td width="50%" valign="center">
         <p align="center">
-          <img src="./contents/media/cheap_off/all_plane.jpg" width="45%">
+          <img src="./contents/media/cheap_off/all_plane_1.jpg" width="45%">
         </p>
     </td>
   </tr>
