@@ -55,6 +55,9 @@
   <img src="./contents/presentation/Slide_3.svg" width="45%" />
   <img src="./contents/presentation/Slide_4.svg" width="45%" />
 </p>
+
+> [!IMPORTANT]
+> Наша презентация - [тык-тык](./contents/presentation/Space_Cadet.pptx)
 <br>
 
 <div align="center">
