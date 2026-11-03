@@ -56,7 +56,6 @@
 <p align="center">
   <img src="./contents/presentation/Slide_1.svg" width="45%" />
   <img src="./contents/presentation/Slide_2.svg" width="45%" />
-  <img src="./contents/presentation/Slide_3.svg" width="45%" />
   <img src="./contents/presentation/Slide_4.svg" width="45%" />
 </p>
 
